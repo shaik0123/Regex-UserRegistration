@@ -11,5 +11,12 @@ public class UserRegistrationMain {
         String firstName = scanner.next();
         UserRegistration obj1 = new UserRegistration();
         obj1.checkFirstName(firstName);
+
+
+        System.out.println("UC-2");
+        System.out.println("Enter your last name: ");
+        String lastName = scanner.next();
+        UserRegistration obj2 = new UserRegistration();
+        obj2.checkLastName(lastName);
     }
 }
