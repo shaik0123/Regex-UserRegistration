@@ -40,5 +40,9 @@ public class UserRegistrationMain {
         System.out.println("UC-6");
         System.out.println("Enter password to check upper case ");
         obj5.checkUpperCase(password);
+
+        System.out.println("UC-7");
+        System.out.println("Enter password to check numeric value ");
+        obj5.checkNumericNumber(password);
     }
 }

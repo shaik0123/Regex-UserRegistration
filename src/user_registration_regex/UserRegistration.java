@@ -63,8 +63,8 @@ public class UserRegistration {
         }
     }
 
-    public void checkUpperCase(String name) {
-        boolean isMatched = Pattern.compile("(?=.*[A-Z])[0-9a-zA-Z@!+_.]{8,}").matcher(name).matches();
+    public void checkUpperCase(String password) {
+        boolean isMatched = Pattern.compile("(?=.*[A-Z])[0-9a-zA-Z@!+_.]{8,}").matcher(password).matches();
         if(isMatched)
         {
             System.out.println("Valid ! It contains uppercase letter");
@@ -72,6 +72,18 @@ public class UserRegistration {
         else
         {
             System.out.println("Enter atleast one uppercase letter");
+        }
+    }
+
+    public void checkNumericNumber(String password) {
+        boolean isMatched = Pattern.compile("(?=.*[0-9])[0-9a-zA-Z@!+_.]{8,}").matcher(password).matches();
+        if(isMatched)
+        {
+            System.out.println("Valid ! It contains numeric number");
+        }
+        else
+        {
+            System.out.println("Enter atleast one numeric number");
         }
     }
 }
