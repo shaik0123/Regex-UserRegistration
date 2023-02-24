@@ -18,5 +18,11 @@ public class UserRegistrationMain {
         String lastName = scanner.next();
         UserRegistration obj2 = new UserRegistration();
         obj2.checkLastName(lastName);
+
+        System.out.println("UC-3");
+        System.out.println("Enter your Email: ");
+        String email = scanner.next();
+        UserRegistration obj3 = new UserRegistration();
+        obj3.isValidEmail(email);
     }
 }
