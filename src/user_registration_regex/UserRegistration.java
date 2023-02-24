@@ -86,4 +86,17 @@ public class UserRegistration {
             System.out.println("Enter atleast one numeric number");
         }
     }
+
+    public void checkSpecialCharacter(String password)
+    {
+        boolean isMatched = Pattern.compile("(?=.*[+._@!-])[0-9a-zA-Z@!+_.]{8,}").matcher(password).matches();
+        if(isMatched)
+        {
+            System.out.println("Valid ! It contains special character");
+        }
+        else
+        {
+            System.out.println("Enter exactly one special character");
+        }
+    }
 }

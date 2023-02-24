@@ -44,5 +44,9 @@ public class UserRegistrationMain {
         System.out.println("UC-7");
         System.out.println("Enter password to check numeric value ");
         obj5.checkNumericNumber(password);
+
+        System.out.println("UC-8");
+        System.out.println("Enter password to check special character ");
+        obj5.checkSpecialCharacter(password);
     }
 }
