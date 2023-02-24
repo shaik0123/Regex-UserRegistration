@@ -30,5 +30,11 @@ public class UserRegistrationMain {
         String mobileNumber = scanner.nextLine();
         UserRegistration obj4 = new UserRegistration();
         obj4.isValidMobileNumber(mobileNumber);
+
+        System.out.println("UC-5");
+        System.out.println("Enter password: ");
+        String password = scanner.next();
+        UserRegistration obj5 = new UserRegistration();
+        obj5.checkCharacters(password);
     }
 }

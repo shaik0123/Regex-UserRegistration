@@ -50,4 +50,16 @@ public class UserRegistration {
             System.out.println("It is not a valid mobile number");
         }
     }
+
+    public void checkCharacters(String password) {
+        boolean isMatched = Pattern.compile("[0-9a-zA-Z@!+_.-]{8,}").matcher(password).matches();
+        if(isMatched)
+        {
+            System.out.println("It has minimum 8 character");
+        }
+        else
+        {
+            System.out.println("Enter minimum 8 characters");
+        }
+    }
 }
