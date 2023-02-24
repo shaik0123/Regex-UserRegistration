@@ -48,5 +48,9 @@ public class UserRegistrationMain {
         System.out.println("UC-8");
         System.out.println("Enter password to check special character ");
         obj5.checkSpecialCharacter(password);
+
+        System.out.println("UC-9");
+        System.out.println("Enter password to check valid or invalid ");
+        obj5.isValidPassword(password);
     }
 }

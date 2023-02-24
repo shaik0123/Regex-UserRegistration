@@ -99,4 +99,17 @@ public class UserRegistration {
             System.out.println("Enter exactly one special character");
         }
     }
+
+    public void isValidPassword(String password)
+    {
+        boolean isMatched = Pattern.compile("(?=.*[A-Z])(?=.*[0-9])(?=.*[+._@!-])[0-9a-zA-Z@!+_.]{8,}").matcher(password).matches();
+        if(isMatched)
+        {
+            System.out.println("You entered valid password!");
+        }
+        else
+        {
+            System.out.println("You entered invalid password!");
+        }
+    }
 }
