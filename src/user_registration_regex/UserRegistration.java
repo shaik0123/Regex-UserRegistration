@@ -38,4 +38,16 @@ public class UserRegistration {
             System.out.println("invalid email");
         }
     }
+
+    public void isValidMobileNumber(String mobileNumber) {
+        boolean isMatched = Pattern.compile("^[1-9]{2}\\s[0-9]{10}$").matcher(mobileNumber).matches() ;
+        if(isMatched)
+        {
+            System.out.println("It is valid mobile number");
+        }
+        else
+        {
+            System.out.println("It is not a valid mobile number");
+        }
+    }
 }
