@@ -33,8 +33,12 @@ public class UserRegistrationMain {
 
         System.out.println("UC-5");
         System.out.println("Enter password: ");
-        String password = scanner.next();
+        String password = scanner.nextLine();
         UserRegistration obj5 = new UserRegistration();
         obj5.checkCharacters(password);
+
+        System.out.println("UC-6");
+        System.out.println("Enter password to check upper case ");
+        obj5.checkUpperCase(password);
     }
 }

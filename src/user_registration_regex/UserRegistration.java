@@ -62,4 +62,16 @@ public class UserRegistration {
             System.out.println("Enter minimum 8 characters");
         }
     }
+
+    public void checkUpperCase(String name) {
+        boolean isMatched = Pattern.compile("(?=.*[A-Z])[0-9a-zA-Z@!+_.]{8,}").matcher(name).matches();
+        if(isMatched)
+        {
+            System.out.println("Valid ! It contains uppercase letter");
+        }
+        else
+        {
+            System.out.println("Enter atleast one uppercase letter");
+        }
+    }
 }
